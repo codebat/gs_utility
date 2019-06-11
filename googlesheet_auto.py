@@ -14,6 +14,4 @@ if not creds or creds.invalid:
         creds = tools.run_flow(flow, store)
 service = build('sheets', 'v4', http=creds.authorize(Http()))
 
-spreadsheet_id = '1nOYGR2ZdeSQlTlaU67T2lUe7mGOHiJOVeOuyDn1Z8jY'
-
 
